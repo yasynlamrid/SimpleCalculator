@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class InputHelper {
 
     private  InputHelper(){}
-    private static  final Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
     public static double readNumber(String msg)
 
     {
@@ -16,7 +16,7 @@ public class InputHelper {
             String txt = scanner.nextLine();
             try
             {
-                 number = Double.parseDouble(txt);
+                 number = Double.parseDouble(txt.trim());
                  valid=true;
 
             }
@@ -39,7 +39,7 @@ public class InputHelper {
 
             try {
 
-                number = Integer.parseInt(txt);;
+                number = Integer.parseInt(txt.trim());;
                 if (number <= max && number >= min )
                 {
                     valid = true;
