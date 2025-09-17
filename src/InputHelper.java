@@ -5,7 +5,6 @@ public class InputHelper {
     private  InputHelper(){}
     private static final Scanner scanner = new Scanner(System.in);
     public static double readNumber(String msg)
-
     {
         double number = 0;
         boolean valid = false;
